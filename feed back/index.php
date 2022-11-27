@@ -10,12 +10,12 @@
             $nameErr = 'name required';
           }
           if(empty($emailErr)){
-            $name = filter_input(INPUT_POST , 'email' , FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+            $email = filter_input(INPUT_POST , 'email' , FILTER_SANITIZE_FULL_SPECIAL_CHARS);
           } else {
             $emailErr = 'email required';
           }
           if(empty($bodyErr)){
-            $name = filter_input(INPUT_POST , 'body' , FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+            $body = filter_input(INPUT_POST , 'body' , FILTER_SANITIZE_FULL_SPECIAL_CHARS);
           } else {
             $bodyErr = 'feedback required';
           }
